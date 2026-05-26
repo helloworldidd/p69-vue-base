@@ -1,14 +1,24 @@
 <template>
-    <button @click="aviso"> click me</button>
+    <button @click="aviso">{{txt}}</button>
 </template>
 
+
+
+
+
 <script setup>
+defineProps({
+    txt: String
+})
 
 const aviso = () => {
     alert('click')
 }
 
 </script>
+
+
+
 
 <style lang="scss" scoped>
 
@@ -20,6 +30,7 @@ button{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 button:hover{

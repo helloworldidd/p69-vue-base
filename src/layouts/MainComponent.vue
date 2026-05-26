@@ -1,7 +1,18 @@
 <template>
 
 <main>
-  <p>Contenido principal <ButtonComponent /> </p>
+  <p>Contenido principal</p>
+    <p>
+        <ButtonComponent txt="Boton 1" />
+        <ButtonComponent txt="Boton 2" />
+        <ButtonComponent txt="Boton 3" />
+        <ButtonComponent txt="Boton 4" />
+        <ButtonComponent txt="Boton 5" />
+    </p>
+    <p>
+        <Card txt="Tarjeta 1" />
+        <Card txt="Tarjeta 2" />
+    </p>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quo!
   Distinctio culpa sequi aperiam doloribus dignissimos quaerat labore maxime eligendi.
   Fugiat iste maxime, labore rem eligendi atque alias ut. Consequuntur.
@@ -17,7 +28,8 @@
 </template>
 
 <script setup>
-import ButtonComponent from '../components/ButtonComponent.vue';    
+import ButtonComponent from '../components/ButtonComponent.vue';
+import Card from '../components/Card.vue';
 </script>
 
 <style lang="scss" scoped>
