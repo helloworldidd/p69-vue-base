@@ -10,8 +10,8 @@
         <ButtonComponent txt="Boton 5" />
     </p>
     <p>
-        <Card txt="Tarjeta 1" />
-        <Card txt="Tarjeta 2" />
+        <Card title="Tarjeta 1" paragraph="Parrafo de la tarjeta 1" />
+        <Card title="Tarjeta 2"  />
     </p>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quo!
   Distinctio culpa sequi aperiam doloribus dignissimos quaerat labore maxime eligendi.

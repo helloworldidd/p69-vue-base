@@ -1,19 +1,28 @@
 <template>
     <div class="card">
-        <h2>{{ txt }}</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, repellendus.</p>
+        <h2>{{ title }}</h2>
+        <p>{{ paragraph }}</p>
     </div>
 </template>
 
 <script setup>
 defineProps({
-    txt: String
+  title: {
+    type: String,
+    default: "Título por defecto"
+  },
+
+  paragraph: {
+    type: String,
+    default: "No hay descripción disponible"
+  }
 })
 </script>
 
 <style lang="scss" scoped>
 .card{
     display: inline-block;
+    vertical-align: top;
     background-color: #fff;
     padding: 1rem;
     border-radius: 5px;
